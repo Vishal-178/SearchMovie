@@ -1,0 +1,108 @@
+body{
+    background-color: #242424;    
+}
+p, span{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#showMovieSearched{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.movie-Card{
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    width: 200px;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px;
+    transition: .2s;
+}
+.movie-Card:hover {
+    transform: scale(1.5 , 2);
+    box-shadow: 0px 0px 20px 0px;
+}
+.movie-container{
+    margin: 20px 10px;
+}
+.movie-card-image{
+    height: 250px;
+}
+
+.movie-card-content{
+    display: none;
+
+}
+.movie-Card:hover .movie-card-content{
+    display: block;
+}
+
+.movie-Card:hover .movie-card-image{
+    height: 150px;
+}
+.movie-Card:hover .movie-card-content{
+    transform: scale(0.8,0.6);
+}
+.fa-trash-can{
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.fa-heart{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.movie-card-content{
+    padding: 10px;
+}
+
+
+#search-bar-home{
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 100px;
+}
+#heading-recommend{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: none;
+}
+
+.carousel{
+    width:100%;
+    height: 25%;
+  }
+
+#carouselExampleControls{
+    height: 100vh !important;
+}
+
+#Fav-movie-heading{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------------canvas */
+.carousel-inner{
+    height: 100vh !important;
+}
+.carousel-item{
+    height: 100%;
+}
+.image-size{
+    width: 100% !important;
+    height: 100% !important;
+}
