@@ -124,7 +124,7 @@ function addFavorite(props){
     if(ll === null){
         isMoviePresent = false;
     }else{
-        console.log("her is ==============");
+       
         for(let i=0;i<ll.length;i++){
             if(ll[i].imdbID == responseJSON.Search[props].imdbID){
                 isMoviePresent = true;
@@ -151,7 +151,7 @@ function moviepage(props){
         var movieDetail = JSON.parse(http.response);
         obj["movieJSON"] = movieDetail;
         localStorage.setItem('movie', JSON.stringify(obj));
-        window.location.href = "/movie.html";
+        window.location.href = "/SearchMovie/movie.html";
     }
     http.open('get',`https://www.omdbapi.com/?apikey=123600e6&t=${responseJSON.Search[props].Title}&plot=full`)
     http.send();

@@ -50,7 +50,7 @@ function favmoviepage(props){
       var movieDetail = JSON.parse(http.response);
       obj["movieJSON"] = movieDetail;
       localStorage.setItem('movie', JSON.stringify(obj));
-      window.location.href = "/movie.html";
+      window.location.href = "/SearchMovie/movie.html";
   }
   http.open('get',`https://www.omdbapi.com/?apikey=123600e6&i=${arr[props].imdbID}&plot=full`)
   http.send();
